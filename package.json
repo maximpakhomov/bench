@@ -1,0 +1,22 @@
+{
+  "name": "bench",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha algorithms/part_1/task_1.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maximpakhomov/bench.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maximpakhomov/bench/issues"
+  },
+  "homepage": "https://github.com/maximpakhomov/bench#readme",
+  "devDependencies": {
+    "mocha": "^8.2.1"
+  }
+}
