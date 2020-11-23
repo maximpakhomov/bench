@@ -2,7 +2,7 @@ getMaxSubstr = (str) => {
   let maxSubstr = '';
   let idx = 0;
 
-  if (str.length) {
+  if (typeof str === 'string' && str.length) {
     for (let i = 0; i < str.length; i++) {
       if (str[i] >= str[i + 1] || (i + 1) === str.length) {
         substr = str.substring(idx, i + 1);

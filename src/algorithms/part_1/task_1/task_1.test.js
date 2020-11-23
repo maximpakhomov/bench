@@ -31,3 +31,11 @@ test('строка с пробелами', () => {
 test('строка с цифрами', () => {
   expect(getMaxSubstr('а 10абваб 5вгд')).toBe(' 5вгд');
 });
+
+test('пустая строка', () => {
+  expect(getMaxSubstr('')).toBe('');
+});
+
+test('не строка', () => {
+  expect(getMaxSubstr(12345)).toBe('');
+});
