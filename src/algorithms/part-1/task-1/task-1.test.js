@@ -1,4 +1,4 @@
-const getMaxSubstr = require('./task_1.js');
+const getMaxSubstr = require('./task-1.js');
 
 test('все буквы в прямом порядке', () => {
   expect(getMaxSubstr('абвгд')).toBe('абвгд');
