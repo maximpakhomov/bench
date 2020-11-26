@@ -1,4 +1,4 @@
-getListOfWordsWithMostVowels = (text) => {
+getWordsWithMostVowels = (text) => {
   const wordsWithMostVowels = new Set();
 
   if (typeof text === 'string' && text.length) {
@@ -25,5 +25,7 @@ getListOfWordsWithMostVowels = (text) => {
   // временная сложность функции sort() O(nlogn), где n - количество слов в тексте
   return Array.from(wordsWithMostVowels).sort().toString();
 }
+
+module.exports = getWordsWithMostVowels;
 
 // итого, k + n + (n * m) + nlogn
