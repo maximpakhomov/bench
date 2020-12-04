@@ -8,7 +8,8 @@ getMaxSubstrLength = (str) => {
 
   if (typeof str === 'string' && str.length) {
     for (let i = 0; i < str.length; i++) {
-      if (str[i].localeCompare(str[i + 1]) >= 0 || (i + 1) === str.length) {
+      // проверяем что строка на закончилась и сравниваем текущий символ со следующим
+      if ((i + 1) === str.length || str[i].localeCompare(str[i + 1]) >= 0) {
         substrLength = str.substring(idx, i + 1).length;
 
         if (substrLength > maxSubstrLength) maxSubstrLength = substrLength;
